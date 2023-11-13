@@ -28,5 +28,6 @@ func setCoursewareId(lCoursewareId string) {
 	client.Jar.SetCookies(url, []*http.Cookie{
 		{Name: "Courseware_9000001132" + lCoursewareId, Value: "1c1e2698fd13a4e9828322e7ff9a2563"},
 		{Name: "Courseware_12200005370" + lCoursewareId, Value: "85bc5786f0737b717842c638b508bae9"},
+		// TODO 需要抓包并修改 Courseware_12200005370xxx，后三位数字删除（后面会加上 lCoursewareId）
 	})
 }
